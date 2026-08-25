@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://performances.shoonyadance.com/</loc>
+  </url>
+  <url>
+    <loc>https://performances.shoonyadance.com/groupe-furaya/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://performances.shoonyadance.com/groupe-furaya/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://performances.shoonyadance.com/groupe-furaya/nl/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://performances.shoonyadance.com/groupe-furaya/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://performances.shoonyadance.com/groupe-furaya/"/>
+  </url>
+  <url>
+    <loc>https://performances.shoonyadance.com/groupe-furaya/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://performances.shoonyadance.com/groupe-furaya/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://performances.shoonyadance.com/groupe-furaya/nl/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://performances.shoonyadance.com/groupe-furaya/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://performances.shoonyadance.com/groupe-furaya/"/>
+  </url>
+  <url>
+    <loc>https://performances.shoonyadance.com/groupe-furaya/fr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://performances.shoonyadance.com/groupe-furaya/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://performances.shoonyadance.com/groupe-furaya/nl/"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://performances.shoonyadance.com/groupe-furaya/fr/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://performances.shoonyadance.com/groupe-furaya/"/>
+  </url>
+</urlset>
