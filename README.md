@@ -10,13 +10,10 @@ https://performances.shoonyadance.com/
 
 Initial pages:
 
+- `https://performances.shoonyadance.com/sangam/`
 - `https://performances.shoonyadance.com/groupe-furaya/`
 - `https://performances.shoonyadance.com/groupe-furaya/nl/`
 - `https://performances.shoonyadance.com/groupe-furaya/fr/`
-
-Planned page:
-
-- `https://performances.shoonyadance.com/sangam/`
 
 ## Publish Checklist
 
@@ -30,6 +27,6 @@ Planned page:
    - `https://performances.shoonyadance.com/groupe-furaya/nl/`
    - `https://performances.shoonyadance.com/groupe-furaya/fr/`
    - `https://performances.shoonyadance.com/sitemap.xml`
-6. Only after the new URLs are live, update or redirect `https://festivals.shoonyadance.com/groupe-furaya/`.
+6. Keep `https://festivals.shoonyadance.com/groupe-furaya/` as a legacy redirect.
 
-Do not remove the existing festivals URL during the active Google Business Profile posting flow.
+Do not remove the legacy festivals redirect during the active Google Business Profile posting flow.
