@@ -6,6 +6,15 @@
   </url>
   <url>
     <loc>https://performances.shoonyadance.com/sangam/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://performances.shoonyadance.com/sangam/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://performances.shoonyadance.com/sangam/nl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://performances.shoonyadance.com/sangam/"/>
+  </url>
+  <url>
+    <loc>https://performances.shoonyadance.com/sangam/nl/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://performances.shoonyadance.com/sangam/"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://performances.shoonyadance.com/sangam/nl/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://performances.shoonyadance.com/sangam/"/>
   </url>
   <url>
     <loc>https://performances.shoonyadance.com/groupe-furaya/</loc>
