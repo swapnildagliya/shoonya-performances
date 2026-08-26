@@ -86,7 +86,7 @@
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;background:var(--ink);color:var(--paper);overflow-x:hidden}
 body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;background:var(--ink);color:var(--paper)}
-img{display:block;max-width:100%}
+img{display:block;max-width:100%;height:auto}
 a{color:inherit}
 
 /* top bar */
@@ -124,6 +124,17 @@ p{font-size:17px;line-height:1.65;color:rgba(247,239,225,.82);max-width:68ch}
 .fact strong{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2)}
 .fact span{color:rgba(247,239,225,.86)}
 
+/* company + students */
+.wide h2{margin-bottom:14px}
+.wide .intro{margin-bottom:28px}
+.people{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:1px;background:rgba(247,239,225,.15)}
+.person{background:var(--panel)}
+.person img{width:100%;aspect-ratio:1;object-fit:cover;object-position:center top}
+.person b{display:block;padding:12px 14px 14px;font-size:13px;font-weight:600;line-height:1.35;color:var(--paper)}
+.gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:rgba(247,239,225,.15)}
+.gallery img{width:100%;aspect-ratio:3/2;object-fit:cover;background:var(--panel)}
+.photo-credit{margin-top:14px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);max-width:none}
+
 .credits{display:grid;gap:1px;background:rgba(247,239,225,.15);margin-top:24px}
 .credit{background:var(--panel);padding:20px}
 .credit strong{display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2);margin-bottom:8px}
@@ -141,11 +152,15 @@ footer a:hover{color:var(--gold2)}
   .hero-type{min-height:0;padding-top:clamp(28px,7vw,48px);padding-bottom:clamp(32px,8vw,56px)}
   .sub{max-width:28ch}
 }
+@media(max-width:1100px){.people{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:760px){
   .grid,.credits{grid-template-columns:1fr}
   .fact{grid-template-columns:1fr;gap:6px}
   .topbar .when{display:none}
+  .people{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .gallery{grid-template-columns:1fr}
 }
+@media(max-width:430px){.people{grid-template-columns:repeat(2,minmax(0,1fr))}}
 </style>
 </head>
 <body>
@@ -194,13 +209,43 @@ footer a:hover{color:var(--gold2)}
     </div>
   </section>
 
+  <section class="section wide" id="company">
+    <h2>Het gezelschap</h2>
+    <p class="intro">SANGAM wordt gedanst door ABC a bollywood company, het Belgische Indiase dansgezelschap opgericht en geleid door Swapnil Dagliya.</p>
+    <div class="people">
+      <figure class="person"><img src="../assets/company/swapnil.jpg" width="700" height="700" alt="Swapnil Dagliya aan het dansen." loading="lazy" decoding="async"/><b>Swapnil Dagliya</b></figure>
+      <figure class="person"><img src="../assets/company/narcisse.jpg" width="700" height="700" alt="Narcisse Merlier aan het dansen." loading="lazy" decoding="async"/><b>Narcisse Merlier</b></figure>
+      <figure class="person"><img src="../assets/company/sara.jpg" width="700" height="700" alt="Sara Van Holm aan het dansen." loading="lazy" decoding="async"/><b>Sara Van Holm</b></figure>
+      <figure class="person"><img src="../assets/company/svetlana.jpg" width="700" height="700" alt="Svetlana Bubnova aan het dansen." loading="lazy" decoding="async"/><b>Svetlana Bubnova</b></figure>
+      <figure class="person"><img src="../assets/company/chiara.jpg" width="700" height="700" alt="Chiara Bisinelli aan het dansen." loading="lazy" decoding="async"/><b>Chiara Bisinelli</b></figure>
+      <figure class="person"><img src="../assets/company/kaushika.jpg" width="700" height="700" alt="Kaushika Kumar aan het dansen." loading="lazy" decoding="async"/><b>Kaushika Kumar</b></figure>
+      <figure class="person"><img src="../assets/company/laurien.jpg" width="700" height="700" alt="Laurien De Ridder aan het dansen." loading="lazy" decoding="async"/><b>Laurien De Ridder</b></figure>
+      <figure class="person"><img src="../assets/company/khushboo.jpg" width="700" height="700" alt="Khushboo Agarwal aan het dansen." loading="lazy" decoding="async"/><b>Khushboo Agarwal</b></figure>
+      <figure class="person"><img src="../assets/company/shreya.jpg" width="700" height="700" alt="Shreya Vaidya aan het dansen." loading="lazy" decoding="async"/><b>Shreya Vaidya</b></figure>
+      <figure class="person"><img src="../assets/company/roshni.jpg" width="700" height="700" alt="Roshni Tela aan het dansen." loading="lazy" decoding="async"/><b>Roshni Tela</b></figure>
+      <figure class="person"><img src="../assets/company/haike.jpg" width="700" height="700" alt="Haike Bourgeois aan het dansen." loading="lazy" decoding="async"/><b>Haike Bourgeois</b></figure>
+      <figure class="person"><img src="../assets/company/srimahavalli.jpg" width="700" height="700" alt="Srimahavalli Thiyagarajan aan het dansen." loading="lazy" decoding="async"/><b>Srimahavalli Thiyagarajan</b></figure>
+    </div>
+    <p class="photo-credit">Foto&#39;s &copy; Stijn Dejonckheere &amp; Jo&euml;lle Verbeeck</p>
+  </section>
+
+  <section class="section wide" id="students">
+    <h2>Onze studenten op het podium</h2>
+    <p class="intro">SANGAM wordt gedanst samen met de Bollyfolk-, Bollywood- en Bhangra-studenten van Shoonya Dance Centre &mdash; dezelfde dansers die je hier ziet op het Gent India Dans Festival in mei 2026.</p>
+    <div class="gallery">
+      <img src="../assets/students/bollywood.jpg" width="1600" height="1067" alt="Bollywood-studenten vullen het podium in felrode en roze kostuums." loading="lazy" decoding="async"/>
+      <img src="../assets/students/bollyfolk.jpg" width="1600" height="1067" alt="Bollyfolk-studenten in rokken met spiegelwerk, midden in een draai." loading="lazy" decoding="async"/>
+      <img src="../assets/students/dandiya.jpg" width="1600" height="1067" alt="Een dansende studente met dandiya-stokken." loading="lazy" decoding="async"/>
+      <img src="../assets/students/bhangra.jpg" width="1600" height="1067" alt="Een Bhangra-studente in een sprong, armen wijd open." loading="lazy" decoding="async"/>
+    </div>
+    <p class="photo-credit">Gent India Dans Festival, 2 mei 2026 &middot; Foto&#39;s &copy; Stijn Dejonckheere</p>
+  </section>
+
   <section class="section" id="credits">
     <div class="grid">
       <div>
         <h2>Credits</h2>
         <p>Een productie van ABC a bollywood company in Shoonya Dance Centre.</p>
-        <p class="names">Met Swapnil, Narcisse, Sara, Svetlana, Chiara, Kaushika, Laurien, Khushboo, Shreya, Roshni, Haike en Maha.</p>
-        <p class="names">Samen met de Bollyfolk-, Bollywood- en Bhangra-studenten van Shoonya Dance Centre.</p>
       </div>
       <div class="credits" aria-label="SANGAM credits">
         <div class="credit"><strong>Concept</strong><span>Swapnil Dagliya met ABC a bollywood company</span></div>
@@ -216,6 +261,7 @@ footer a:hover{color:var(--gold2)}
   <a href="/">Shoonya Performances</a>
   <span class="foot-links">
     <a href="https://www.shoonyadance.com/contact">Contacteer ons</a>
+    <a href="https://abcbollywoodbelgium.com/refund-policy">Terugbetalingsbeleid</a>
     <a href="https://links.shoonyadance.com/go/ticket">Tickets &rarr;</a>
   </span>
 </footer>
