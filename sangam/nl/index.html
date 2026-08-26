@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <meta name="theme-color" content="#18120B"/>
 <title>SANGAM - Indiase dansvoorstelling | Shoonya Performances</title>
-<meta name="description" content="SANGAM is een avondvullende Indiase dansvoorstelling van ABC a bollywood company in het Shoonya Theatre in Gent, op 7 en 8 november 2026."/>
+<meta name="description" content="SANGAM is een Indiase dansvoorstelling van ABC a bollywood company in het Shoonya Theatre in Gent, op 7 en 8 november 2026."/>
 <link rel="canonical" href="https://performances.shoonyadance.com/sangam/nl/"/>
 <link rel="alternate" hreflang="en" href="https://performances.shoonyadance.com/sangam/"/>
 <link rel="alternate" hreflang="nl" href="https://performances.shoonyadance.com/sangam/nl/"/>
@@ -13,18 +13,18 @@
 <meta name="robots" content="index,follow"/>
 <meta property="og:type" content="website"/>
 <meta property="og:title" content="SANGAM - Indiase dansvoorstelling"/>
-<meta property="og:description" content="Eén kind. Eén rivier. Een dorp dat opnieuw moet leren liefhebben. Een productie van ABC a bollywood company in Shoonya Dance Centre."/>
+<meta property="og:description" content="Eén kind. Eén rivier. Twee werelden die elkaar moeten vinden. Een productie van ABC a bollywood company in Shoonya Dance Centre."/>
 <meta property="og:image" content="https://performances.shoonyadance.com/sangam/assets/og.jpg"/>
 <meta property="og:image:type" content="image/jpeg"/>
 <meta property="og:image:width" content="1200"/>
 <meta property="og:image:height" content="628"/>
-<meta property="og:image:alt" content="SANGAM - een avondvullende Indiase dansvoorstelling, 7 en 8 november 2026, Gent."/>
+<meta property="og:image:alt" content="SANGAM - een Indiase dansvoorstelling, 7 en 8 november 2026, Gent."/>
 <meta property="og:url" content="https://performances.shoonyadance.com/sangam/nl/"/>
 <meta property="og:site_name" content="Shoonya Performances"/>
 <meta property="og:locale" content="nl_BE"/>
 <meta name="twitter:card" content="summary_large_image"/>
 <meta name="twitter:title" content="SANGAM - Indiase dansvoorstelling"/>
-<meta name="twitter:description" content="Eén kind. Eén rivier. Een dorp dat opnieuw moet leren liefhebben. Za 7 nov 19.30 en zo 8 nov 15.00."/>
+<meta name="twitter:description" content="Eén kind. Eén rivier. Twee werelden die elkaar moeten vinden. Za 7 nov 19.30 en zo 8 nov 15.00."/>
 <meta name="twitter:image" content="https://performances.shoonyadance.com/sangam/assets/og.jpg"/>
 <link rel="icon" href="/favicon.ico" sizes="any"/>
 <link rel="icon" type="image/png" href="/favicon.png"/>
@@ -57,6 +57,10 @@
     "@type": "Organization",
     "name": "ABC a bollywood company",
     "url": "https://www.abcbollywoodbelgium.com"
+  },
+  "performer": {
+    "@type": "Person",
+    "name": "Swapnil Dagliya"
   },
   "offers": {
     "@type": "Offer",
@@ -110,7 +114,7 @@ h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(60px,8.5vw,132px)
 .btn.primary{background:var(--paper);color:var(--ink);border-color:var(--paper)}
 .btn:hover{background:var(--gold);color:var(--ink);border-color:var(--gold)}
 .hero-art{position:relative;border-left:1px solid var(--line);overflow:hidden;background:var(--panel)}
-.hero-art img{width:100%;height:100%;object-fit:cover;object-position:center 42%}
+.hero-art img{width:100%;height:100%;object-fit:cover;object-position:center center}
 
 .section{padding:clamp(34px,6vw,80px);border-top:1px solid var(--line)}
 .grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(280px,.9fr);gap:clamp(24px,6vw,72px);align-items:start}
@@ -123,6 +127,8 @@ p{font-size:17px;line-height:1.65;color:rgba(247,239,225,.82);max-width:68ch}
 .fact{display:grid;grid-template-columns:160px 1fr;gap:18px;background:var(--panel);padding:18px}
 .fact strong{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--gold2)}
 .fact span{color:rgba(247,239,225,.86)}
+.ics{display:inline-block;margin-top:8px;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold2);text-decoration:none;border-bottom:1px solid rgba(240,215,130,.42);padding-bottom:2px}
+.ics:hover{color:var(--paper);border-bottom-color:var(--paper)}
 
 /* company + students */
 .wide h2{margin-bottom:14px}
@@ -177,14 +183,17 @@ footer a:hover{color:var(--gold2)}
       <div class="eyebrow">ABC a bollywood company in Shoonya Dance Centre</div>
       <h1>SANGAM</h1>
       <div class="deva" lang="hi">संगम</div>
-      <p class="sub">Eén kind. Eén rivier. Een dorp dat opnieuw moet leren liefhebben.</p>
+      <p class="sub">Eén kind. Eén rivier. Twee werelden die elkaar moeten vinden.</p>
       <div class="actions">
         <a class="btn primary" href="https://links.shoonyadance.com/go/ticket">Tickets</a>
         <a class="btn" href="#details">Meer info</a>
       </div>
     </div>
     <div class="hero-art">
-      <img src="../assets/artwork.jpg" width="1024" height="1010" alt="Schilderij in Madhubani-stijl: een dorp van vrouwen op gebarsten aarde, een rivier die er doorheen loopt en een jongen op de groene overkant."/>
+      <picture>
+        <source media="(max-width: 900px)" srcset="../assets/hero-mobile.jpg"/>
+        <img src="../assets/hero-desktop.jpg" width="1600" height="1867" alt="Schilderij in Madhubani-stijl: een dorp van vrouwen op gebarsten aarde, een rivier die er doorheen loopt en een jongen op de groene overkant."/>
+      </picture>
     </div>
   </section>
 
@@ -199,7 +208,7 @@ footer a:hover{color:var(--gold2)}
       </div>
       <div>
         <div class="facts" aria-label="SANGAM praktisch">
-          <div class="fact"><strong>Wanneer</strong><span>Zaterdag 7 november 2026 om 19.30 uur<br/>Zondag 8 november 2026 om 15.00 uur</span></div>
+          <div class="fact"><strong>Wanneer</strong><span>Zaterdag 7 november 2026 om 19.30 uur<br/>Zondag 8 november 2026 om 15.00 uur<br/><a class="ics" href="../sangam.ics" download>Zet in je agenda</a></span></div>
           <div class="fact"><strong>Waar</strong><span>Shoonya Theatre<br/>Shoonya Dance Centre<br/>Stapelplein 41, 9000 Gent</span></div>
           <div class="fact"><strong>Tickets</strong><span>€ 20 vast tarief</span></div>
           <div class="fact"><strong>Bereikbaarheid</strong><span>10 minuten wandelen van station Gent-Dampoort<br/>Betalend straatparkeren in de buurt</span></div>
