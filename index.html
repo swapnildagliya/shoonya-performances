@@ -44,6 +44,11 @@ h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(48px,11vw,124px);
 .thumb{align-self:stretch;min-height:260px;overflow:hidden;background:#191919}
 .thumb img{width:100%;height:100%;object-fit:cover}
 .furaya .accent{color:var(--leaf)}
+.card.cancelled .thumb img{filter:grayscale(1) brightness(.55)}
+.card.cancelled h2{color:rgba(255,255,255,.62)}
+.card.cancelled .eyebrow .accent{color:rgba(255,255,255,.62)}
+.card.cancelled .eyebrow s{text-decoration-thickness:1px;text-underline-offset:2px}
+.flag{display:inline-block;margin-bottom:14px;padding:7px 12px;background:#fff;color:#0a0a0a;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
 .sangam .accent{color:var(--gold)}
 footer{padding:32px clamp(28px,6vw,72px);color:rgba(255,255,255,.56);font-size:13px}
 @media(max-width:760px){.card{grid-template-columns:1fr}.thumb{order:-1;min-height:300px}}
@@ -59,19 +64,18 @@ footer{padding:32px clamp(28px,6vw,72px);color:rgba(255,255,255,.56);font-size:1
     </div>
   </section>
   <section class="list" aria-label="Performance pages">
-    <article class="card furaya">
+    <article class="card furaya cancelled">
       <div>
-        <div class="eyebrow"><span class="accent">African dance</span> - 19 September 2026</div>
+        <div class="eyebrow"><span class="accent">African dance</span> - <s>19 September 2026</s></div>
+        <div class="flag">Cancelled</div>
         <h2>Groupe Furaya</h2>
-        <p>A one-night ticketed performance of Congolese dance, song and live percussion, followed by free initiation classes from 20:30.</p>
+        <p>This performance will not take place. Everyone who bought a ticket has been refunded in full.</p>
         <div class="meta">
-          <span>19:00-21:30</span>
-          <span>EUR 20 performance</span>
-          <span>Free initiations</span>
+          <span>Cancelled 4 September 2026</span>
         </div>
-        <a class="cta" href="groupe-furaya/">Open page</a>
+        <a class="cta" href="groupe-furaya/">Read the notice</a>
       </div>
-      <a class="thumb" href="groupe-furaya/" aria-label="Open Groupe Furaya page">
+      <a class="thumb" href="groupe-furaya/" aria-label="Groupe Furaya - cancelled, read the notice">
         <img src="groupe-furaya/assets/hero.jpg" alt="Groupe Furaya performers"/>
       </a>
     </article>
