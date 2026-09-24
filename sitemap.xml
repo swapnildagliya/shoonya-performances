@@ -16,25 +16,4 @@
     <xhtml:link rel="alternate" hreflang="nl" href="https://performances.shoonyadance.com/sangam/nl/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://performances.shoonyadance.com/sangam/"/>
   </url>
-  <url>
-    <loc>https://performances.shoonyadance.com/groupe-furaya/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://performances.shoonyadance.com/groupe-furaya/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://performances.shoonyadance.com/groupe-furaya/nl/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://performances.shoonyadance.com/groupe-furaya/fr/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://performances.shoonyadance.com/groupe-furaya/"/>
-  </url>
-  <url>
-    <loc>https://performances.shoonyadance.com/groupe-furaya/nl/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://performances.shoonyadance.com/groupe-furaya/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://performances.shoonyadance.com/groupe-furaya/nl/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://performances.shoonyadance.com/groupe-furaya/fr/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://performances.shoonyadance.com/groupe-furaya/"/>
-  </url>
-  <url>
-    <loc>https://performances.shoonyadance.com/groupe-furaya/fr/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://performances.shoonyadance.com/groupe-furaya/"/>
-    <xhtml:link rel="alternate" hreflang="nl" href="https://performances.shoonyadance.com/groupe-furaya/nl/"/>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://performances.shoonyadance.com/groupe-furaya/fr/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://performances.shoonyadance.com/groupe-furaya/"/>
-  </url>
 </urlset>
