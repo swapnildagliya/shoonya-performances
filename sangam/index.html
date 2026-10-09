@@ -171,6 +171,16 @@ footer a:hover{color:var(--gold2)}
   .gallery{grid-template-columns:1fr}
 }
 @media(max-width:430px){.people{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.open{padding:clamp(34px,6vw,80px);border-top:1px solid var(--line)}
+.open p{font-family:Georgia,"Times New Roman",serif;font-size:clamp(22px,2.6vw,36px);line-height:1.3;max-width:26ch}
+.open p+p{margin-top:18px}
+.open .cue{font-family:inherit;font-size:clamp(16px,1.4vw,19px);color:var(--muted);max-width:none;margin-top:26px}
+.why{padding:clamp(34px,6vw,80px);border-top:1px solid var(--line)}
+.why blockquote{margin:0;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:clamp(20px,2.2vw,30px);line-height:1.38;max-width:34ch}
+.why blockquote p+p{margin-top:16px}
+.why cite{display:block;margin-top:22px;font-style:normal;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2)}
+.invite{margin-top:18px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(18px,1.8vw,24px);line-height:1.35}
 </style>
 </head>
 <body>
@@ -199,6 +209,13 @@ footer a:hover{color:var(--gold2)}
         <img src="assets/hero-desktop.jpg" width="1600" height="1867" alt="Madhubani-style painting: an all-female village on parched earth, a river running through it, and a boy standing on the green far bank."/>
       </picture>
     </div>
+  </section>
+
+  <section class="open" id="open" aria-label="The story, in short">
+    <p>Imagine a village that has never seen water. Not a river, not rain. Never.</p>
+    <p>And then a child arrives. A child who belongs to no one.</p>
+    <p>The village has to choose: keep him, or give him away. A queen who has to make that call. A wind that carries every plea nobody answers. And somewhere out there, a mother who is a river.</p>
+    <p class="cue">We&rsquo;re not going to tell you what they choose. That&rsquo;s why you come.</p>
   </section>
 
   <section class="section" id="details">
@@ -244,6 +261,15 @@ footer a:hover{color:var(--gold2)}
     <p class="photo-credit">Photos &copy; Stijn Dejonckheere &amp; Jo&euml;lle Verbeeck</p>
   </section>
 
+  <section class="why" id="why">
+    <div class="eyebrow">Why I made it</div>
+    <blockquote>
+      <p>&ldquo;Every dancer on that stage came to Indian dance from somewhere else. Different countries, different mother tongues, different reasons for walking into a studio in Ghent. None of them grew up with this. All of them chose it.</p>
+      <p>So a story about what a village does with someone who doesn&rsquo;t fit, I had to make it with them. They are the village. They were also, once, the stranger.&rdquo;</p>
+    </blockquote>
+    <cite>Swapnil Dagliya</cite>
+  </section>
+
   <section class="section wide" id="students">
     <h2>Our Students on Stage</h2>
     <p class="intro">SANGAM is danced along with Bollyfolk, Bollywood and Bhangra students at Shoonya Dance Centre &mdash; the same dancers you see here on stage.</p>
@@ -261,6 +287,7 @@ footer a:hover{color:var(--gold2)}
       <div>
         <h2>Credits</h2>
         <p>An ABC a bollywood company production at Shoonya Dance Centre.</p>
+        <p class="invite">Two shows. 7 and 8 November, Shoonya, Ghent. Bring someone who has never seen Indian dance.</p>
       </div>
       <div class="credits" aria-label="SANGAM credits">
         <div class="credit"><strong>Concept</strong><span>Swapnil Dagliya with ABC a bollywood company</span></div>

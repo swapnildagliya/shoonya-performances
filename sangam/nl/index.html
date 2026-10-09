@@ -170,6 +170,16 @@ footer a:hover{color:var(--gold2)}
   .gallery{grid-template-columns:1fr}
 }
 @media(max-width:430px){.people{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+.open{padding:clamp(34px,6vw,80px);border-top:1px solid var(--line)}
+.open p{font-family:Georgia,"Times New Roman",serif;font-size:clamp(22px,2.6vw,36px);line-height:1.3;max-width:26ch}
+.open p+p{margin-top:18px}
+.open .cue{font-family:inherit;font-size:clamp(16px,1.4vw,19px);color:var(--muted);max-width:none;margin-top:26px}
+.why{padding:clamp(34px,6vw,80px);border-top:1px solid var(--line)}
+.why blockquote{margin:0;font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:clamp(20px,2.2vw,30px);line-height:1.38;max-width:34ch}
+.why blockquote p+p{margin-top:16px}
+.why cite{display:block;margin-top:22px;font-style:normal;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2)}
+.invite{margin-top:18px;font-family:Georgia,"Times New Roman",serif;font-size:clamp(18px,1.8vw,24px);line-height:1.35}
 </style>
 </head>
 <body>
@@ -198,6 +208,13 @@ footer a:hover{color:var(--gold2)}
         <img src="../assets/hero-desktop.jpg" width="1600" height="1867" alt="Schilderij in Madhubani-stijl: een dorp van vrouwen op gebarsten aarde, een rivier die er doorheen loopt en een jongen op de groene overkant."/>
       </picture>
     </div>
+  </section>
+
+  <section class="open" id="open" aria-label="Het verhaal, in het kort">
+    <p>Stel je een dorp voor dat nog nooit water heeft gezien. Geen rivier, geen regen. Nooit.</p>
+    <p>En dan komt er een kind. Een kind dat van niemand is.</p>
+    <p>Het dorp moet kiezen: hem houden, of hem weggeven. Een koningin die die keuze moet maken. Een wind die elke onbeantwoorde smeekbede draagt. En ergens daarbuiten, een moeder die een rivier is.</p>
+    <p class="cue">We vertellen je niet wat ze kiezen. Daarvoor kom je.</p>
   </section>
 
   <section class="section" id="details">
@@ -243,6 +260,15 @@ footer a:hover{color:var(--gold2)}
     <p class="photo-credit">Foto&#39;s &copy; Stijn Dejonckheere &amp; Jo&euml;lle Verbeeck</p>
   </section>
 
+  <section class="why" id="why">
+    <div class="eyebrow">Waarom ik het maakte</div>
+    <blockquote>
+      <p>&ldquo;Elke danser op dat podium kwam van ergens anders naar de Indiase dans. Andere landen, andere moedertalen, andere redenen om een studio in Gent binnen te stappen. Niemand van hen is ermee opgegroeid. Allemaal hebben ze ervoor gekozen.</p>
+      <p>Dus een verhaal over wat een dorp doet met iemand die er niet bij past, dat moest ik met hen maken. Zij zijn het dorp. En ooit waren ook zij de vreemde.&rdquo;</p>
+    </blockquote>
+    <cite>Swapnil Dagliya</cite>
+  </section>
+
   <section class="section wide" id="students">
     <h2>Onze studenten op het podium</h2>
     <p class="intro">SANGAM wordt gedanst samen met de Bollyfolk-, Bollywood- en Bhangra-studenten van Shoonya Dance Centre &mdash; dezelfde dansers die je hier op het podium ziet.</p>
@@ -260,6 +286,7 @@ footer a:hover{color:var(--gold2)}
       <div>
         <h2>Credits</h2>
         <p>Een productie van ABC a bollywood company in Shoonya Dance Centre.</p>
+        <p class="invite">Twee voorstellingen. 7 en 8 november, Shoonya, Gent. Breng iemand mee die nog nooit Indiase dans heeft gezien.</p>
       </div>
       <div class="credits" aria-label="SANGAM credits">
         <div class="credit"><strong>Concept</strong><span>Swapnil Dagliya met ABC a bollywood company</span></div>
