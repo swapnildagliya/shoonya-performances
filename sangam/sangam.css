@@ -59,6 +59,16 @@ p{font-size:17px;line-height:1.65;color:var(--ink);max-width:66ch}
 .ics{display:inline-block;margin-top:8px;font-size:12px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--red);text-decoration:none;border-bottom:2px solid currentColor;padding:6px 0 3px}
 .ics:hover{color:var(--ink)}
 
+/* poem — the playbill text, set in two columns like the chair handout */
+.poem{background:var(--paper2);border-top:1px solid var(--line)}
+.sg-poem{columns:2;column-gap:clamp(32px,6vw,96px);max-width:1040px}
+.sg-poem p{break-inside:avoid;font-family:"Playfair Display",Georgia,serif;font-size:clamp(18px,1.6vw,21px);line-height:1.55;max-width:none;margin:0 0 1.1em}
+.sg-poem .river{color:var(--teal)}
+.sg-poem .closing{font-style:italic;margin-top:1.6em}
+.sg-poem .confluence{display:block;font-weight:600;font-size:1.05em;color:var(--red);margin-bottom:.35em}
+.show i{font-family:"Playfair Display",Georgia,serif;font-size:15px;color:var(--teal)}
+@media(max-width:760px){.sg-poem{columns:1}.sg-poem .closing{margin-top:1.1em}}
+
 /* company + students */
 .wide{background:var(--paper)}
 .wide h2{margin-bottom:12px}
