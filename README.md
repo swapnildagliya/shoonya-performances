@@ -30,3 +30,9 @@ Initial pages:
 6. Keep `https://festivals.shoonyadance.com/groupe-furaya/` as a legacy redirect.
 
 Do not remove the legacy festivals redirect during the active Google Business Profile posting flow.
+
+## Printed QR codes — never move these paths
+
+Printed posters carry QR codes to these exact URLs. Never rename, move or delete them, and keep them live after the show (posters stay on walls):
+
+- `https://performances.shoonyadance.com/frankenstein/` — Glen Lambrecht Ballet poster (Jan 2027), QR made 2 Nov 2026.
