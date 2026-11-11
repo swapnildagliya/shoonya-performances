@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<meta name="theme-color" content="#0A0A0A"/>
+<meta name="theme-color" content="#000000"/>
 <title>Shoonya Performances - Ghent</title>
 <meta name="description" content="Stage performances and cultural evenings at Shoonya Dance Centre in Ghent."/>
 <link rel="canonical" href="https://performances.shoonyadance.com/"/>
@@ -22,62 +22,264 @@
 <link rel="icon" type="image/png" href="/favicon.png"/>
 <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 <link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=Inter:wght@400;500&family=Marcellus&family=PT+Serif:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
 <style>
-:root{--ink:#0a0a0a;--paper:#f7f0e6;--muted:#bdb5a8;--line:rgba(255,255,255,.18);--gold:#d4a840;--leaf:#6fb58d;--river:#4a9bbf}
-*{box-sizing:border-box;margin:0;padding:0}
-html{-webkit-text-size-adjust:100%;background:var(--ink);color:#fff}
-body{font-family:Inter,-apple-system,BlinkMacSystemFont,"Helvetica Neue",Arial,sans-serif;background:var(--ink);color:#fff;min-height:100vh}
+:root{
+  --void-black:#000000;
+  --bone:#F4F1EB;
+  --void-white:#FFFFFF;
+  --mist:#D6D6D6;
+  --charcoal:#4A4A4A;
+  --vibrant-purple:#B564F7;
+
+  --font-display:"Marcellus","Playfair Display",Georgia,serif;
+  --font-italic:"PT Serif",Georgia,serif;
+  --font-body:"PT Serif",Georgia,serif;
+  --font-data:"Geist Mono",ui-monospace,monospace;
+  --font-ui:"Inter",-apple-system,"Helvetica Neue",Arial,sans-serif;
+
+  --pad:clamp(20px,4vw,56px);
+}
+html{
+  --bg:var(--void-black); --fg:var(--void-white); --muted:var(--mist);
+  --rule:var(--charcoal); --focus:var(--vibrant-purple);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--font-body);font-size:18px;line-height:1.55;font-weight:400}
 img{display:block;max-width:100%}
 a{color:inherit}
-.hero{min-height:70svh;display:grid;align-content:end;padding:clamp(28px,6vw,72px);background:linear-gradient(180deg,rgba(10,10,10,.15),rgba(10,10,10,.94)),url("sangam/assets/artwork.jpg") center 38%/cover}
-.eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.74);font-weight:700;margin-bottom:18px}
-h1{font-family:Georgia,"Times New Roman",serif;font-size:clamp(48px,11vw,124px);line-height:.92;max-width:10ch;font-weight:700}
-.hero p{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:clamp(18px,2.4vw,26px);line-height:1.35;max-width:46rem;color:rgba(255,255,255,.84);margin-top:22px}
-.list{padding:clamp(28px,6vw,72px);display:grid;gap:1px;background:#111}
-.card{display:grid;grid-template-columns:minmax(0,1fr) minmax(260px,420px);gap:clamp(20px,4vw,48px);align-items:end;min-height:360px;padding:clamp(24px,5vw,56px);background:#0d0d0d;border:1px solid rgba(255,255,255,.1);overflow:hidden}
-.card h2{font-family:Georgia,"Times New Roman",serif;font-size:clamp(38px,6vw,82px);line-height:.96;font-weight:700}
-.card p{color:rgba(255,255,255,.78);font-size:17px;line-height:1.55;max-width:42rem;margin-top:16px}
-.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-.meta span{border:1px solid var(--line);padding:9px 13px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.84)}
-.cta{display:inline-flex;width:max-content;text-decoration:none;margin-top:28px;padding:14px 20px;border:1px solid #fff;font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase}
-.cta:hover{background:#fff;color:#0a0a0a}
-.thumb{align-self:stretch;min-height:260px;overflow:hidden;background:#191919}
-.thumb img{width:100%;height:100%;object-fit:cover}
-.sangam .accent{color:var(--gold)}
-footer{padding:32px clamp(28px,6vw,72px);color:rgba(255,255,255,.56);font-size:13px}
-@media(max-width:760px){.card{grid-template-columns:1fr}.thumb{order:-1;min-height:300px}}
+h1,h2,h3{font-weight:400;margin:0}
+[hidden]{display:none!important}
+p{margin:0}
+.skip{position:absolute;left:12px;top:-80px;z-index:100;background:var(--void-white);color:var(--void-black);padding:12px 16px;font:500 16px var(--font-ui);text-decoration:none}
+.skip:focus{top:12px;outline:3px solid var(--vibrant-purple);outline-offset:2px}
+:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+
+.site-header{background:var(--void-black);color:var(--void-white);display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:4px 24px;padding:10px var(--pad)}
+.brand{display:inline-flex;align-items:center;min-height:44px}
+.brand img{height:52px;width:auto}
+.site-nav{display:flex;flex-wrap:wrap;gap:0 6px}
+.site-nav a{display:inline-flex;align-items:center;min-height:44px;padding:0 10px;font:500 16px/1 var(--font-ui);text-decoration:none;color:var(--void-white)}
+.site-nav a:hover{text-decoration:underline;text-underline-offset:6px}
+.site-nav a[aria-current="page"]{text-decoration:underline;text-decoration-color:var(--vibrant-purple);text-decoration-thickness:2px;text-underline-offset:10px}
+@media (min-width:900px){.site-header{flex-wrap:nowrap}}
+@media (max-width:899px){.site-nav{flex-basis:100%;margin-left:-10px}}
+@media (max-width:480px){
+  .site-nav{flex-wrap:nowrap;justify-content:space-between;gap:0;margin-left:-6px;margin-right:-6px}
+  .site-nav a{padding:0 6px;font-size:14px}
+}
+
+.poster{position:relative;display:grid;align-items:end;min-height:max(80svh,560px);background:var(--void-black);color:var(--void-white);text-decoration:none;overflow:hidden}
+.poster-img{position:absolute;top:0;right:0;bottom:0;width:54%;height:100%;object-fit:cover;object-position:50% 12%}
+.poster-copy{position:relative;padding:0 var(--pad) clamp(36px,6vw,64px)}
+.poster-title{font-size:clamp(56px,8.6vw,124px);line-height:.98;letter-spacing:-.015em}
+.poster-title .roman{display:block;font-family:var(--font-display)}
+.poster-title .ital{display:block;font-family:var(--font-italic);font-style:italic}
+.poster-line{margin-top:22px;font-size:clamp(19px,1.8vw,24px);line-height:1.4;color:var(--void-white)}
+.poster-line .d{font-family:var(--font-data);font-variant-numeric:tabular-nums}
+.poster-credit{margin-top:14px;font:400 14px/1.4 var(--font-ui);color:var(--muted)}
+.poster:focus-visible{outline:4px solid var(--vibrant-purple);outline-offset:-8px}
+.poster:hover .poster-title .ital{text-decoration:underline;text-decoration-color:var(--vibrant-purple);text-decoration-thickness:3px;text-underline-offset:10px}
+@media (max-width:760px){
+  .poster{display:flex;flex-direction:column;align-items:stretch;min-height:0}
+  .poster-img{position:static;width:100%;height:56svh}
+  .poster-copy{padding:28px var(--pad) 40px}
+  .poster-title{font-size:clamp(52px,16vw,64px)}
+}
+
+.wrap{max-width:1360px;margin:0 auto;padding:0 var(--pad)}
+.prog{background:var(--bg);color:var(--fg);padding:clamp(56px,8vw,104px) 0 0}
+.sec-head{padding-bottom:clamp(28px,4vw,44px)}
+.sec-head h1,.sec-head h2{font-family:var(--font-display);font-size:clamp(38px,5vw,64px);line-height:1.05;letter-spacing:-.01em}
+.sec-head p{margin-top:14px;max-width:60ch;color:var(--muted);font-size:19px}
+
+.rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}
+.rows>li{border-bottom:1px solid var(--rule)}
+.row{display:grid;grid-template-columns:240px minmax(0,1fr) minmax(300px,420px);gap:clamp(24px,4vw,56px);align-items:start;padding:clamp(28px,4vw,48px) 0;text-decoration:none;color:inherit}
+.row:focus-visible{outline-offset:-3px}
+.when{font-family:var(--font-data);font-variant-numeric:tabular-nums;font-weight:400}
+.when .big{display:block;font-size:clamp(34px,3.2vw,42px);line-height:1.1}
+.when .sub{display:block;margin-top:10px;font-size:16px;line-height:1.4;color:var(--muted)}
+.when .genre{font-family:var(--font-ui);font-weight:500;font-size:20px;line-height:1.3}
+.row h2,.row h3{font-family:var(--font-display);font-size:clamp(34px,3.6vw,48px);line-height:1.08;letter-spacing:-.01em;text-wrap:balance}
+.row:hover h2,.row:hover h3{text-decoration:underline;text-decoration-color:var(--vibrant-purple);text-decoration-thickness:3px;text-underline-offset:8px}
+.row .with{margin-top:10px;font-size:20px;color:var(--muted);font-style:italic;font-family:var(--font-italic)}
+.row .desc{margin-top:18px;max-width:46ch;text-wrap:pretty}
+.row .facts{margin-top:18px;font-family:var(--font-data);font-variant-numeric:tabular-nums;font-size:17px;line-height:1.5;color:var(--fg)}
+.row .facts span+span::before{content:"·";margin:0 .6em;color:var(--muted)}
+.shot{margin:0}
+.shot img{width:100%;aspect-ratio:4/3;object-fit:cover;background:var(--charcoal)}
+.shot figcaption{margin-top:8px;font:400 14px/1.4 var(--font-ui);color:var(--muted)}
+@media (max-width:1000px){.row{grid-template-columns:200px minmax(0,1fr) 300px}}
+@media (max-width:760px){
+  .row{grid-template-columns:minmax(0,1fr);gap:0;align-items:start;padding:28px 0 32px;grid-template-areas:"shot" "when" "text"}
+  .row .shot{grid-area:shot}
+  .row .when{grid-area:when;margin-top:22px}
+  .row .text{grid-area:text;margin-top:14px}
+  .when .big{font-size:34px}
+  .row .facts{font-size:16px}
+  .row h2,.row h3{font-size:36px}
+}
+@media (min-width:761px){.row .shot{order:3}}
+
+.site-footer{background:var(--void-black);color:var(--void-white);padding:56px 0 56px;margin-top:clamp(64px,9vw,112px)}
+.foot{display:grid;grid-template-columns:1fr auto;gap:28px 48px;align-items:start}
+.foot h2{font-family:var(--font-display);font-size:28px;line-height:1.2}
+.foot p{margin-top:12px;color:var(--mist);max-width:46ch}
+.foot p a{text-underline-offset:4px}
+.foot ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:0 8px}
+.foot li a{display:inline-flex;align-items:center;min-height:44px;padding:0 12px;font:500 16px/1 var(--font-ui);text-decoration:none}
+.foot li a:hover{text-decoration:underline;text-underline-offset:6px}
+@media (max-width:760px){.foot{grid-template-columns:1fr}.foot ul{margin-left:-12px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+
+.shot.art img{aspect-ratio:1024/1010;object-fit:contain;background:var(--void-black)}
+.prog+.prog{padding-top:clamp(64px,9vw,112px)}
+#upcoming:not(:has(.up-item:not([hidden]))){display:none}
+.up-list{list-style:none;margin:0;padding:0}
+.up-list .poster{min-height:max(70svh,540px)}
+.poster-img.art{object-fit:contain;object-position:50% 50%;background:var(--void-black);width:46%;right:0;height:calc(100% - 48px);top:24px;bottom:auto}
+.up-list .poster-copy{max-width:50%;padding-left:0;padding-right:0}
+.up-list .poster-title{font-size:clamp(44px,5.4vw,80px)}
+.up-list .poster-title .ital{font-size:.5em;line-height:1.2;margin-top:.3em}
+.poster-facts{margin-top:18px;font-family:var(--font-data);font-variant-numeric:tabular-nums;font-size:17px;line-height:1.5}
+.shot.art-tall img{height:auto;aspect-ratio:1080/1523;object-fit:contain;background:var(--void-black)}
+@media (max-width:760px){
+  .poster-img.art{position:static;width:100%;height:auto;aspect-ratio:1080/1523}
+  .up-list .poster-copy{max-width:none}
+  .up-list .poster-title{font-size:clamp(44px,13vw,64px)}
+  .poster-facts{font-size:16px}
+}
 </style>
 </head>
 <body>
-<main>
-  <section class="hero">
-    <div>
-      <div class="eyebrow">Shoonya Dance Centre - Ghent</div>
-      <h1>Performances</h1>
-      <p>Stage productions, guest performances and special cultural evenings at Shoonya.</p>
+<a class="skip" href="#programme">Skip to the programme</a>
+
+<header class="site-header">
+  <a class="brand" href="https://www.shoonyadance.com"><img src="assets/shoonya-logo-script-purple.png" alt="Shoonya Dance Centre"></a>
+  <nav class="site-nav" aria-label="Site">
+    <a href="https://schedule.shoonyadance.com">Classes</a>
+    <a href="https://workshops.shoonyadance.com/">Workshops</a>
+    <a href="https://festivals.shoonyadance.com/">Festivals</a>
+    <a href="https://performances.shoonyadance.com/" aria-current="page">Performances</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="prog" id="programme" aria-labelledby="prog-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <h1 id="prog-h">Performances</h1>
+        <p>Stage productions, guest performances and special cultural evenings at Shoonya.</p>
+      </div>
     </div>
   </section>
-  <section class="list" aria-label="Performance pages">
-    <article class="card sangam">
-      <div>
-        <div class="eyebrow"><span class="accent">Indian dance production</span> - Premiered 7 November 2026</div>
-        <h2>SANGAM</h2>
-        <p>A village without water, and a child who belongs to no one. A full-length Indian dance production by ABC a bollywood company at Shoonya Dance Centre.</p>
-        <div class="meta">
-          <span>Past production</span>
-          <span>7 &amp; 8 Nov 2026</span>
-          <span>Both shows sold out</span>
-        </div>
-        <a class="cta" href="sangam/">Open page</a>
-      </div>
-      <a class="thumb" href="sangam/" aria-label="Open SANGAM page">
-        <img src="sangam/assets/artwork.jpg" alt="Madhubani-style painting of a village, a river and a boy on the far bank"/>
-      </a>
-    </article>
+
+  <section class="prog" id="upcoming" aria-labelledby="upcoming-h" hidden>
+    <!-- UPCOMING PRODUCTIONS. This section stays hidden until an item in it is due to show.
+         Each production is one <li class="up-item" hidden data-from="..." data-until="...">:
+           data-from  = the moment it appears, with timezone (e.g. 2027-01-04T10:00:00+01:00). Leave the attribute out to show it at once (then drop "hidden").
+           data-until = 00:00 on the day AFTER the last show (e.g. last show 14 Mar 2027: 2027-03-15T00:00:00).
+         Inside the <li>: a poster link (<a class="poster">, as in the item below) and a <template> holding the same production in row form (<a class="row">, as in Past performances).
+         After data-until the script swaps the poster for the row and moves the item to the top of Past performances; this section hides again when empty. -->
+    <div class="wrap">
+      <div class="sec-head"><h2 id="upcoming-h">Upcoming performances</h2></div>
+      <ul class="up-list" id="rows-upcoming">
+        <li class="up-item" hidden data-from="2026-11-13T10:00:00+01:00" data-until="2027-01-31T00:00:00">
+          <a class="poster" href="frankenstein/">
+            <img class="poster-img art" src="frankenstein/assets/poster.jpg" width="1080" height="1523" alt="Frankenstein poster, Glen Lambrecht Ballet: a dancer bathed in red light." loading="lazy" decoding="async">
+            <div class="poster-copy">
+              <p class="poster-title"><span class="roman">Frankenstein</span><span class="ital">Glen Lambrecht Ballet</span></p>
+              <p class="poster-line">A new dance production, freely inspired by Mary Shelley&rsquo;s novel</p>
+              <p class="poster-facts">29 &amp; 30 Jan 2027 · 20:00 · Shoonya Theatre · &euro;24</p>
+              <p class="poster-credit">Photo &copy; Koen De Clerck / Kodec Photography</p>
+            </div>
+          </a>
+          <template class="past-row">
+          <a class="row" href="frankenstein/">
+            <div class="when"><span class="big">29 &amp; 30 Jan</span><span class="sub">2027</span></div>
+            <div class="text">
+              <h3>Frankenstein</h3>
+              <p class="with">Glen Lambrecht Ballet</p>
+              <p class="desc">A new dance production, freely inspired by Mary Shelley&rsquo;s novel.</p>
+              <p class="facts"><span>20:00</span><span>Shoonya Theatre</span></p>
+            </div>
+            <figure class="shot art-tall"><img src="frankenstein/assets/poster.jpg" width="1080" height="1523" alt="Frankenstein poster, Glen Lambrecht Ballet: a dancer bathed in red light." loading="lazy" decoding="async"><figcaption>Photo &copy; Koen De Clerck / Kodec Photography</figcaption></figure>
+          </a>
+          </template>
+        </li>
+      </ul>
+    </div>
   </section>
+
+  <section class="prog" id="past" aria-labelledby="past-h">
+    <div class="wrap">
+      <div class="sec-head"><h2 id="past-h">Past performances</h2></div>
+      <ol class="rows" id="rows-past">
+        <li>
+          <a class="row" href="sangam/">
+            <div class="when"><span class="big">7 &amp; 8 Nov</span><span class="sub">2026</span></div>
+            <div class="text">
+              <h3>SANGAM</h3>
+              <p class="with">Indian dance production · Premiered 7 November 2026</p>
+              <p class="desc">A village without water, and a child who belongs to no one. A full-length Indian dance production by ABC a bollywood company at Shoonya Dance Centre.</p>
+              <p class="facts"><span>Both shows sold out</span></p>
+            </div>
+            <figure class="shot art"><img src="sangam/assets/artwork.jpg" alt="Madhubani-style painting of a village, a river and a boy on the far bank" loading="lazy" decoding="async"></figure>
+          </a>
+        </li>
+      </ol>
+    </div>
+  </section>
+
 </main>
-<footer>
-  <p>Performances are hosted at Shoonya Dance Centre, Stapelplein 41, 9000 Gent.</p>
+
+<footer class="site-footer">
+  <div class="wrap foot">
+    <div>
+      <h2>Shoonya Dance Centre</h2>
+      <p>Performances are hosted at Shoonya Dance Centre, Stapelplein 41, 9000 Gent.</p>
+    </div>
+    <nav aria-label="Footer">
+      <ul>
+        <li><a href="https://instagram.com/shoonyadance">Instagram</a></li>
+        <li><a href="https://facebook.com/shoonyadance">Facebook</a></li>
+        <li><a href="https://www.shoonyadance.com/newsletter">Newsletter</a></li>
+        <li><a href="https://www.shoonyadance.com/contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
 </footer>
+
+<script>
+/* Upcoming items appear at data-from and retire into the past list at data-until
+   (start of the day after the last show). The page is complete without this script. */
+(function () {
+  var up = document.getElementById('rows-upcoming'), past = document.getElementById('rows-past');
+  var sec = document.getElementById('upcoming');
+  if (!up || !past || !sec) return;
+  function reached(s) { return new Date() >= new Date(s); }
+  var items = Array.prototype.slice.call(up.querySelectorAll(':scope > li.up-item'));
+  items.sort(function (a, b) { return new Date(a.getAttribute('data-until')) - new Date(b.getAttribute('data-until')); });
+  var live = 0;
+  items.forEach(function (li) {
+    var from = li.getAttribute('data-from'), until = li.getAttribute('data-until');
+    if (from && !reached(from)) return;
+    if (until && reached(until)) {
+      var t = li.querySelector('template.past-row');
+      if (t) li.innerHTML = t.innerHTML;
+      li.removeAttribute('data-from'); li.removeAttribute('data-until'); li.classList.remove('up-item'); li.removeAttribute('hidden');
+      past.insertBefore(li, past.firstChild);
+    } else {
+      li.removeAttribute('hidden'); live++;
+    }
+  });
+  if (live) sec.removeAttribute('hidden'); else sec.setAttribute('hidden', '');
+})();
+</script>
 </body>
 </html>
